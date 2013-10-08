@@ -1,22 +1,24 @@
-{ 
-  "name"             : "yoctolib"
-, "version"          : "0.1.1"
-, "description"      : "node.js module for the Yoctopuce library for Javascript"
-, "author"           : "Yoctopuce Sarl, Switzerland <support@yoctopuce.com> (http://www.yoctopuce.com/)"
-, "repository"       : {
-    "type"           : "git",
-    "url"            : "https://github.com/yoctopuce/yoctolib_nodejs.git"
-  } 
-, "bugs"             : {
-    "url"            : "https://github.com/yoctopuce/yoctolib_nodejs/issues"
-  }
-, "keywords"         : [ "Yoctopuce" ]
-, "main"             : "./index.js"
-, "engines"          : {
-    "node"           : ">=0.8"
-  }
-, "dependencies"     : {
-    "xmlhttprequest" : "git://github.com/TheThingSystem/node-XMLHttpRequest.git"
-  }
-, "readmeFilename"   : "README.txt"
+{
+  "name": "yoctolib",
+  "version": "0.1.31",
+  "description": "node.js module for the Yoctopuce library for Javascript",
+  "author": "Yoctopuce Sarl, Switzerland <support@yoctopuce.com> (http://www.yoctopuce.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoctopuce/yoctolib_nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yoctopuce/yoctolib_nodejs/issues"
+  },
+  "keywords": [
+    "Yoctopuce"
+  ],
+  "main": "./index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {
+    "xmlhttprequest": "git://github.com/TheThingSystem/node-XMLHttpRequest.git"
+  },
+  "readmeFilename": "README.txt"
 }
