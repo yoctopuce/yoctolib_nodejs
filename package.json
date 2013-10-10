@@ -1,23 +1,27 @@
-{ 
-  "name"             : "yoctolib"
-, "version"          : "1.01.008"
-, "description"      : "node.js module for the Yoctopuce library for Javascript"
-, "author"           : "Yoctopuce Sarl, Switzerland <support@yoctopuce.com> (http://www.yoctopuce.com/)"
-, "contributor"      : ["Marshall Rose <mrose17@gmail.com> (http://thethingsystem.com/)"]
-, "repository"       : {
-    "type"           : "git",
-    "url"            : "https://github.com/yoctopuce/yoctolib_nodejs.git"
-  } 
-, "bugs"             : {
-    "url"            : "https://github.com/yoctopuce/yoctolib_nodejs/issues"
-  }
-, "keywords"         : [ "Yoctopuce" ]
-, "main"             : "./index.js"
-, "engines"          : {
-    "node"           : ">=0.8"
-  }
-, "dependencies"     : {
-    "xmlhttprequest" : "git://github.com/TheThingSystem/node-XMLHttpRequest.git"
-  }
-, "readmeFilename"   : "README.txt"
+{
+  "name": "yoctolib",
+  "version": "1.1.13064",
+  "description": "node.js module for the Yoctopuce library for Javascript",
+  "author": "Yoctopuce Sarl, Switzerland <support@yoctopuce.com> (http://www.yoctopuce.com/)",
+  "contributor": [
+    "Marshall Rose <mrose17@gmail.com> (http://thethingsystem.com/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoctopuce/yoctolib_nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yoctopuce/yoctolib_nodejs/issues"
+  },
+  "keywords": [
+    "Yoctopuce"
+  ],
+  "main": "./index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {
+    "xmlhttprequest": "git://github.com/TheThingSystem/node-XMLHttpRequest.git"
+  },
+  "readmeFilename": "README.txt"
 }
