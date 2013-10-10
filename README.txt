@@ -1,6 +1,6 @@
 /*********************************************************************/
  *
- * Y O C T O P U C E    L I B R A R Y    f o r    J a v a S c r i p t
+ * Y O C T O P U C E    L I B R A R Y    f o r    N o d e . j s
  *
  * - - - - - - - - - - - License information: - - - - - - - - - - -
  *
@@ -37,15 +37,17 @@
 
 Content of this package:
 ------------------------
-Examples/            Directory with sample code for each device
-Sources/             Source code of the high-level library (in Javascript)
+doc/                 HTML interactive help files describing the library
+example/             Directory with sample code for each device
+lib/                 Source code of the library (in Javascript)
 FILES.txt            List of files contained in this archive
 RELEASE.txt          Release notes
-index.js    
-package.json     	 npm's package file
+index.js             Node.js entry point to load the library
+package.json         npm's package file
 
 In order to use the Javascript library, you will probably need to download
-as well the VirtualHub software for your OS.
+as well the VirtualHub software for your OS (unless you intend to connect
+directly to a YoctoHub-Ethernet or a YoctoHub-Wireless).
 
 For more details, refer to the documentation specific to each product, which
 includes sample code with explanations, and a programming reference manual.
