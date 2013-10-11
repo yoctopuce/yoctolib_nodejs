@@ -24,8 +24,8 @@ if(process.argv[2]=="any" ) {
 }
 
 if(watchdog.isOnline()) {
-    if (process.argv[3] == "on")    watchdog.set_running(watchdog.RUNNING_ON);
-    if (process.argv[3] == "off")   watchdog.set_running(watchdog.RUNNING_OFF);
+    if (process.argv[3] == "on")    watchdog.set_running(YWatchdog.RUNNING_ON);
+    if (process.argv[3] == "off")   watchdog.set_running(YWatchdog.RUNNING_OFF);
     if (process.argv[3] == "reset") watchdog.resetWatchdog();
 }else{
     console.log("Module not connected (check identification and USB cable)\n");

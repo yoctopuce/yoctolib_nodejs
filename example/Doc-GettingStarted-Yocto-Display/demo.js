@@ -1,6 +1,7 @@
 var yoctolib = require('yoctolib');
 var YAPI = yoctolib.YAPI;
 var YDisplay = yoctolib.YDisplay;
+var YDisplayLayer = yoctolib.YDisplayLayer;
 
 
 // Setup the API to use local VirtualHub
@@ -28,8 +29,7 @@ var l0=disp.get_displayLayer(0);
 l0.clear();
 
 // display a text in the middle of the screen
-//fixme: l0.drawText(w / 2, h / 2, l0.ALIGN_CENTER, "Hello world!" );
-l0.drawText(w / 2, h / 2, 0, "Hello world!" );
+l0.drawText(w / 2, h / 2, YDisplayLayer.ALIGN_CENTER, "Hello world!" );
 // visualize each corner
 l0.moveTo(0,5);l0.lineTo(0,0);l0.lineTo(5,0);
 l0.moveTo(0,h-6);l0.lineTo(0,h-1);l0.lineTo(5,h-1);

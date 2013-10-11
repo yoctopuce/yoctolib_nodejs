@@ -27,7 +27,7 @@ if(process.argv[2]=="any" ) {
 console.log("Set ouput " + process.argv[3] + " of " + target + " to " + process.argv[4]);
 var relay  = YRelay.FindRelay(target + ".relay" + process.argv[3]);   
 if(relay.isOnline()) {
-    relay.set_output(process.argv[4] == "ON" ? relay.OUTPUT_ON : relay.OUTPUT_OFF);
+    relay.set_output(process.argv[4] == "ON" ? YRelay.OUTPUT_ON : YRelay.OUTPUT_OFF);
 }else{
     console.log("Module not connected (check identification and USB cable)\n");
 }

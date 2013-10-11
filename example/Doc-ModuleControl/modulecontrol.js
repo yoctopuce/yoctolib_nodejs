@@ -1,6 +1,6 @@
 var yoctolib = require('yoctolib');
 var YAPI = yoctolib.YAPI;
-var YModule = yoctolib.YModule;
+var  = yoctolib.YModule;
 
 if(process.argv.length < 3) {
     console.log("usage: modulecontrol.js <serial or logical name> [ON/OFF]");
@@ -22,7 +22,7 @@ if(module.isOnline()) {
         console.log('serial:       '+module.get_serialNumber());
         console.log('logical name: '+module.get_logicalName());
         console.log('luminosity:   '+module.get_luminosity()+'%');
-        console.log('beacon:       '+(module.get_beacon()==module.BEACON_ON?'ON':'OFF'));
+        console.log('beacon:       '+(module.get_beacon()==YModule.BEACON_ON?'ON':'OFF'));
         console.log('upTime:       '+parseInt(module.get_upTime()/1000)+' sec');
         console.log('USB current:  '+module.get_usbCurrent()+' mA');
         console.log('logs:');

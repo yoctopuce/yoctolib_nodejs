@@ -1,2 +1,2 @@
- release note for Node.js
-line2
+- Initial release, based on the original Javascript library
+- Add support for HTTP Callback mode

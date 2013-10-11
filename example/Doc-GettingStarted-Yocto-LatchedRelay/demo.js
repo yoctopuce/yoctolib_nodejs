@@ -24,7 +24,7 @@ if(process.argv[2]=="any" ) {
 }
 
 if(relay.isOnline()) {
-    relay.set_state(process.argv[3] == "A" ? relay.STATE_A : relay.STATE_B);
+    relay.set_state(process.argv[3] == "A" ? YRelay.STATE_A : YRelay.STATE_B);
 }else{
     console.log("Module not connected (check identification and USB cable)\n");
 }
