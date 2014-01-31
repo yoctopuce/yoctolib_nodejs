@@ -1,6 +1,6 @@
 var yoctolib = require('yoctolib');
 var YAPI = yoctolib.YAPI;
-var  = yoctolib.YModule;
+var YModule = yoctolib.YModule;
 
 if(process.argv.length < 3) {
     console.log("usage: modulecontrol.js <serial or logical name> [ON/OFF]");

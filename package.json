@@ -1,6 +1,6 @@
 { 
   "name"             : "yoctolib"
-, "version"          : "1.01.008"
+, "version"          : "1.01.14801"
 , "description"      : "node.js module for the Yoctopuce library for Javascript"
 , "author"           : "Yoctopuce Sarl, Switzerland <support@yoctopuce.com> (http://www.yoctopuce.com/)"
 , "contributor"      : ["Marshall Rose <mrose17@gmail.com> (http://thethingsystem.com/)"]
@@ -17,7 +17,7 @@
     "node"           : ">=0.8"
   }
 , "dependencies"     : {
-    "xmlhttprequest" : "git://github.com/TheThingSystem/node-XMLHttpRequest.git"
+    "xmlhttprequest" : ">=1.5"
   }
 , "readmeFilename"   : "README.txt"
 }

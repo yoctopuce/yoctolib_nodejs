@@ -1,2 +1,2 @@
-- Initial release, based on the original Javascript library
-- Add support for HTTP Callback mode
+- add YAPI.RegisterHubDiscoveryCallback and YAPI.TriggerHubDiscovery
+- minor bug fixes

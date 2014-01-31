@@ -11,25 +11,28 @@
  */
 
 var fs  = require('fs')
+  , buffer = require('buffer')
   , vm  = require('vm')
   , xhr = require('xmlhttprequest')
   ;
 
-
-var api = { window         : { XMLHttpRequest : xhr.XMLHttpRequest }
-          , XMLHttpRequest : xhr.XMLHttpRequest
+var api = { XMLHttpRequest : xhr.XMLHttpRequest
+          , Buffer         : buffer.Buffer
           , console        : console
-          , navigator      : {}
+          , setTimeout     : setTimeout
           }
   , includeSync = function(filename) {
       vm.runInNewContext(fs.readFileSync(filename).toString(), api, filename);
     }
   , dir = __dirname + '/lib'
-  ,  files  = fs.readdirSync(dir)
+  , files = fs.readdirSync(dir)
   , i = files.indexOf('yocto_api.js')
   ;
 
 if (i !== -1) files.splice(i, 1);
 includeSync(dir + '/yocto_api.js');
-for (i = 0; i < files.length; i++) includeSync(dir + '/' + files[i]);
+for (i = 0; i < files.length; i++) {
+    if(files[i].substr(0,1) == '.') continue;
+    includeSync(dir + '/' + files[i]);
+}
 module.exports = api;

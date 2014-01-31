@@ -51,13 +51,13 @@ setInterval(function () {
     // set is asynchronous and get is synchronous, we cannot mix them
     io.wait_async( function() {
         var inputdata = io.get_portState(); // read port values
-        var line = "";  // display part state value as binary
+        var line = "";  // display port value as binary
         for (var i = 0; i < 8; i++) {
             if ((inputdata & (128 >> i))>0) 
                 line = line + '1'; 
             else 
                 line = line + '0';
         }
-        console.log("port state = "+line);
+        console.log("port value = "+line);
     },null);             
 },1000);
