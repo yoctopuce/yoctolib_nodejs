@@ -14,12 +14,14 @@ var fs  = require('fs')
   , buffer = require('buffer')
   , vm  = require('vm')
   , xhr = require('xmlhttprequest')
+  , crypto = require('crypto')
   ;
 
 var api = { XMLHttpRequest : xhr.XMLHttpRequest
           , Buffer         : buffer.Buffer
           , console        : console
           , setTimeout     : setTimeout
+          , crypto         : crypto
           }
   , includeSync = function(filename) {
       vm.runInNewContext(fs.readFileSync(filename).toString(), api, filename);
