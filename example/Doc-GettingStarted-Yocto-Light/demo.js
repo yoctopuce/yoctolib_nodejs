@@ -26,7 +26,7 @@ setInterval(function(){
         console.log("Module not connected (check identification and USB cable)\n");
         process.exit(1);
     }
-    console.log("Current ambiant light : "+sensor.get_currentValue() + " lx") ;
+    console.log("Current ambient light : "+sensor.get_currentValue() + " lx") ;
     console.log("  (press Ctrl-C to exit)\n");
 
 },1000);
