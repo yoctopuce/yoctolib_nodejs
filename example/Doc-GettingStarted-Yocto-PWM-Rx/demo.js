@@ -27,9 +27,9 @@ setInterval(function(){
     }
     console.log("PWM1 : "+pwm1.get_frequency() +"Hz "
                          +pwm1.get_dutyCycle() +"% "
-                         +pwm1.get_pulseCounter() +" pulse Edge ");
+                         +pwm1.get_pulseCounter() +" pulse edges ");
     console.log("PWM2 : "+pwm2.get_frequency() +"Hz "
                          +pwm2.get_dutyCycle() +"% "
-                         +pwm2.get_pulseCounter() +" pulse Edge ");
+                         +pwm2.get_pulseCounter() +" pulse edges ");
     console.log("  (press Ctrl-C to exit)\n");
 },1000);

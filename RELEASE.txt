@@ -1,6 +1,5 @@
-- Add firmware update API (YFirmwareUpdate class and helper method of YModules class)
-- Add thermistor configuration functions
-- Add startDataLogger and stopDataLogger to YSensor object
-- Add YBuzzer class
-- Fix handling of calibration parameters
-- Fix averaged timed reports
+- Add Yocto-Buzzer example
+- Add RS232 examples
+- Fix YModule.checkFirmware that was not throwing exception on error
+- Fix overflow in decoding in malformed timed notifications
+- Fix RIGHT/REAR device mount position

@@ -1,40 +1,45 @@
 /* wrap the browser-side yoctolib_js library for node.js
 
-   usage:
+ usage:
 
-       var yapi = require('yoctolib');
+ var yapi = require('yoctolib');
 
-       if (yapi.yRegisterHub('http://127.0.0.1:4444/') != yapi.YAPI_SUCCESS) ...
+ if (yapi.yRegisterHub('http://127.0.0.1:4444/') != yapi.YAPI_SUCCESS) ...
 
-   note: this could load the library asynchronously, but there's only 30 files to load...
+ note: this could load the library asynchronously, but there's only 30 files to load...
 
  */
 
-var fs  = require('fs')
-  , buffer = require('buffer')
-  , vm  = require('vm')
-  , xhr = require('xmlhttprequest')
-  , crypto = require('crypto')
-  ;
+var fs = require('fs')
+    , buffer = require('buffer')
+    , vm = require('vm')
+    , xhr = require('xmlhttprequest')
+    , crypto = require('crypto')
+    , http = require('http')
+    , url = require('url')
+    ;
 
-var api = { XMLHttpRequest : xhr.XMLHttpRequest
-          , Buffer         : buffer.Buffer
-          , console        : console
-          , setTimeout     : setTimeout
-          , crypto         : crypto
-          }
-  , includeSync = function(filename) {
-      vm.runInNewContext(fs.readFileSync(filename).toString(), api, filename);
+var api = {
+        XMLHttpRequest: xhr.XMLHttpRequest
+        , Buffer: buffer.Buffer
+        , console: console
+        , setTimeout: setTimeout
+        , crypto: crypto
+        , http: http
+        , url: url
     }
-  , dir = __dirname + '/lib'
-  , files = fs.readdirSync(dir)
-  , i = files.indexOf('yocto_api.js')
-  ;
+    , includeSync = function (filename) {
+        vm.runInNewContext(fs.readFileSync(filename).toString(), api, filename);
+    }
+    , dir = __dirname + '/lib'
+    , files = fs.readdirSync(dir)
+    , i = files.indexOf('yocto_api.js')
+    ;
 
 if (i !== -1) files.splice(i, 1);
 includeSync(dir + '/yocto_api.js');
 for (i = 0; i < files.length; i++) {
-    if(files[i].substr(0,1) == '.') continue;
+    if (files[i].substr(0, 1) == '.') continue;
     includeSync(dir + '/' + files[i]);
 }
 module.exports = api;
