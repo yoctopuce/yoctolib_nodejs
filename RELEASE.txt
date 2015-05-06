@@ -1,1 +1,1 @@
-- Fix bug that corrupt calibration during firmware update
+- Fix invalid notification value for YGenericDevices
