@@ -1,1 +1,1 @@
-- Fix invalid notification value for YGenericDevices
+- Prevent exception when loading data from datalogger during datalogger erase
