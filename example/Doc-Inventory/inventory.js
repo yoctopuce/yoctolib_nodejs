@@ -3,7 +3,8 @@ var YAPI = yoctolib.YAPI;
 var YModule = yoctolib.YModule;
 
 // Setup the API to use local VirtualHub
-var res =YAPI.RegisterHub('http://127.0.0.1:4444/');
+console.log("pouet")
+var res =YAPI.RegisterHub('http://user:test@172.17.17.118:4444/');
 
 var module = YModule.FirstModule();
 while(module) {

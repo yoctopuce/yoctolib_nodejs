@@ -1,1 +1,5 @@
-- Prevent exception when loading data from datalogger during datalogger erase
+- Add isSensorReady function on YSensor class
+- Add defaultPage attribute on YNetwork class
+- Add ntpServer attribute on YNetwork class
+- Add httpPort attribute on YNetwork class
+- Add JSON-Num and EMONCMS callback encoding in YNetwork class
