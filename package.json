@@ -1,13 +1,13 @@
-{ 
+{
   "name"             : "yoctolib"
-, "version"          : "1.10.123"
+, "version"          : "1.10.21242"
 , "description"      : "node.js module for the Yoctopuce library for Javascript"
 , "author"           : "Yoctopuce Sarl, Switzerland <support@yoctopuce.com> (http://www.yoctopuce.com/)"
 , "contributor"      : ["Marshall Rose <mrose17@gmail.com> (http://thethingsystem.com/)"]
 , "repository"       : {
     "type"           : "git",
     "url"            : "https://github.com/yoctopuce/yoctolib_nodejs.git"
-  } 
+  }
 , "bugs"             : {
     "url"            : "https://github.com/yoctopuce/yoctolib_nodejs/issues"
   }
