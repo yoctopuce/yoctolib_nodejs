@@ -1,1 +1,2 @@
-- Fix build number of package.json
+releasenoteforNode.js
+line2
