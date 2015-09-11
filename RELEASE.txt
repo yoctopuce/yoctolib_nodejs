@@ -1,2 +1,3 @@
-releasenoteforNode.js
-line2
+- Add new methods set_allSettingsAndFiles() that restore settings and files.
+- Fix missing value change callbacks for some values on Yocto-Serial and Yocto-GPS.
+- Fix build number of package.json.
