@@ -1,3 +1,4 @@
-- Add new methods set_allSettingsAndFiles() that restore settings and files.
-- Fix missing value change callbacks for some values on Yocto-Serial and Yocto-GPS.
-- Fix build number of package.json.
+- Detect invalid settings before updating firmware
+- Add clearCache() method to YFunctions object
+- Fix loadThermistorResponseTable() method
+- Save thermistor response table during firmware update
