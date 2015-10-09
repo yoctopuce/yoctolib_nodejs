@@ -1,6 +1,6 @@
 {
   "name"             : "yoctolib"
-, "version"          : "1.10.21701"
+, "version"          : "1.10.21735"
 , "description"      : "node.js module for the Yoctopuce library for Javascript"
 , "author"           : "Yoctopuce Sarl, Switzerland <support@yoctopuce.com> (http://www.yoctopuce.com/)"
 , "contributor"      : ["Marshall Rose <mrose17@gmail.com> (http://thethingsystem.com/)"]
