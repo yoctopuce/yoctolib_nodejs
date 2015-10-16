@@ -1,4 +1,1 @@
-- Detect invalid settings before updating firmware
-- Add clearCache() method to YFunctions object
-- Fix loadThermistorResponseTable() method
-- Save thermistor response table during firmware update
+- Add YQuadratureDecoder class
