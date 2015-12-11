@@ -1,1 +1,4 @@
-- Add YQuadratureDecoder class
+- Fix get_friendlyName with a logical name on the device
+- Add YCurrentLoopOutput class
+- Add doc example for Yocto-4-20mA-Tx
+- Fix get_functionsIds() method that was not working with "Sensor" as argument
