@@ -1,5 +1,2 @@
-- Add YSpiPort class
-- Add Doc-GettingStarted example for Yocto-Thermistor-C
-- Add Doc-GettingStarted example for Yocto-MaxiThermistor
-- Fix YModule.registerLogCallback() that was not working if it was used from a callback
-- Minor fixes
+- Add missing methods in YColorledCluster
+- Fix YCellular.sendPUK() method
