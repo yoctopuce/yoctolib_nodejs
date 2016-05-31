@@ -1,2 +1,1 @@
-- Add missing methods in YColorledCluster
-- Fix YCellular.sendPUK() method
+- Add support for sending and receiving SMS
