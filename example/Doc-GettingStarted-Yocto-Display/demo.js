@@ -3,7 +3,6 @@ var YAPI = yoctolib.YAPI;
 var YDisplay = yoctolib.YDisplay;
 var YDisplayLayer = yoctolib.YDisplayLayer;
 
-
 // Setup the API to use local VirtualHub
 YAPI.RegisterHub('http://127.0.0.1:4444/');
 

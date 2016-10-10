@@ -88,9 +88,9 @@ function printModbusValue(slave, reg)
     var val;
     process.stdout.write("reg="+reg+" slave="+ slave+"\n");
     if(reg >= 40001) {
-        val = serialPort.modbusReadInputRegisters(slave, reg-40001, 1)[0];
+        val = serialPort.modbusReadRegisters(slave, reg-40001, 1)[0];
     } else if(reg >= 30001) {
-        val = serialPort.modbusReadRegisters(slave, reg-30001, 1)[0];
+        val = serialPort.modbusReadInputRegisters(slave, reg-30001, 1)[0];
     } else if(reg >= 10001) {
         val = serialPort.modbusReadInputBits(slave, reg-10001, 1)[0];
     } else {
