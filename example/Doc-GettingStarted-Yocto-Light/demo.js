@@ -17,7 +17,7 @@ if(process.argv.length < 3 ||  process.argv[2]=="any" ) {
     }
 } else {
     var target = process.argv[2];
-    sensor  = YLightSensor.FindLightSensor(target+".carbonDioxide");   
+    sensor  = YLightSensor.FindLightSensor(target+".lightSensor");
 }
 
 
